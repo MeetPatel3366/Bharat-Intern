@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <!-- start navbar -->
+    <header class="container"data-aos="fade-down" >
+        <nav >
+            <ul>
+                <li><img src="./images/logo.png" alt="logo"></li>
+                <li><a href="./index.html">Home</a> </li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="./Resume.pdf" download>Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- end navbar -->
+
+    <!-- start main-section -->
+    <main class="container">
+        <!-- start main section-1  -->
+        <section class="main container" data-aos="fade-up">
+            <div class="main-heading">
+                <p>hello! i'm</p>
+                <p>meet patel</p>
+                <p>Web developer specializing in frontend.</p>
+            </div>
+            <div class="main-photo">
+                <img src="./images/photo.jpeg" alt="photo">
+            </div>
+        </section>
+        <!-- end main section-1  -->
+
+        <!-- start about us  -->
+        <section class="container" data-aos="fade-down">
+            <div class="about-us" id="about">
+            <p>About Us :</p>
+            <p>Welcome to Meet's portfolio!</p>
+            <ul><li data-aos="fade-right">I am a passionate and dedicated student pursuing a degree in Computer Engineering at Marwadi University, located in the vibrant city of Rajkot, India. My academic journey began with the completion of my 10th standard and diploma education right here in Rajkot, laying the foundation for my pursuit of knowledge and excellence in the field of technology.</li>
+            <li data-aos="fade-left">Driven by a deep fascination for computers and a desire to make a meaningful impact in the world of technology, I chose to specialize in computer engineering. Marwadi University has provided me with an enriching environment where I can explore my interests, enhance my skills, and collaborate with like-minded peers and experienced faculty members.</li>
+            <li data-aos="fade-right">Throughout my academic journey, I have been exposed to a diverse range of subjects, from software development to hardware design, and I have eagerly embraced every opportunity to expand my knowledge and expertise. I believe in the power of innovation and continuous learning to drive progress and solve real-world challenges.</li>
+            <li data-aos="fade-left">Beyond the classroom, I am passionate about leveraging technology to create positive change in society. Whether it's through developing innovative software solutions, contributing to open-source projects, or engaging in community initiatives, I am committed to using my skills and knowledge to make a difference.</li>
+            <li data-aos="fade-right">As I continue my journey in computer engineering, I am excited about the possibilities that lie ahead and the opportunities to push the boundaries of what is possible in the world of technology. Thank you for visiting my portfolio, and I invite you to explore my projects, experiences, and accomplishments as I strive to make my mark in the dynamic field of computer engineering.</li>
+        </ul>
+        </div>
+        </section>
+        <!-- end about us  -->
+
+        <!-- start skill section  -->
+        <section class="skill container" data-aos="fade-up" id="skills">
+            <div id="skill-heading" data-aos="fade-right">
+                <p>My Special Skills Field Here :</p>
+            </div>
+            <div id="skill-set" data-aos="fade-left">
+                <div id="main-skill">
+                    <div>
+                        <img src="./images/cicon.png" alt="skill-icon">
+                    </div>
+                    <div>
+                        <p>Development</p>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>HTML <progress id="file" value="100"max="100"> </progress></li>
+                            <li>CSS <progress id="file" value="95" max="100"></progress></li>
+                            <li>Tailwind CSS <progress id="file" value="92" max="100">  </progress></li>
+                            <li>Javascript <progress id="file" value="90" max="100">  </progress></li>
+                            <li>ReactJs <progress id="file" value="85" max="100">  </progress></li>
+                            <li>GIT <progress id="file" value="82" max="100"> </progress></li>
+                            <li>GitHub <progress id="file" value="82" max="100"> </progress></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end skill section  -->
+
+        <section class="project container" data-aos="fade-down" id="projects">
+            <p id="project-heading">My Complete Projects :</p>
+            <div class="projects">
+            <div class="project-list">
+                <p>Project 1</p>
+                <img src="./images/netflix clone.jpg" alt="netflix">
+                <p>Netflix Clone</p>
+            </div>
+            <div class="project-list">
+                <p>Project 2</p>
+                <img src="./images/amazon clone.jpg" alt="amazon">
+                <p>Amazon Clone</p>
+            </div>
+        </div>
+        </section>
+
+        <section class="contact container" data-aos="fade-up" id="contact">
+            <h3>Contact US</h3>
+            <form action="#">
+                    <div>
+                        <label for="fname">Your First Name :</label>
+                        <input type="text" placeholder="Enter Your First Name">
+                    </div>
+                    <div>
+                        <label for="lname">Your Last Name :</label>
+                        <input type="text" placeholder="Enter Your Last Name">
+                    </div>
+                <div>
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" placeholder="Enter Your Email">
+                </div>
+                <div>
+                    <input type="submit">
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer class="container" data-aos="fade-up">
+        <div>
+            <p>&copy; This website and its content is copyright of my personal Protfolio 2024. All rights reserved</p>
+            <img src="./images/logo.png" alt="logo">
+        </div>
+    </footer>
+    <!-- end main-section -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>
