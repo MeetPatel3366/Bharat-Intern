@@ -1,249 +1,109 @@
 *
 {
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
-html
+body
 {
-    font-size: 10px;
+    background: black;
+    color: #171717;
 }
 .container
 {
-    margin: 0 auto;
-    margin-bottom: 2rem;
-    max-width: 95vw;
-
-}
-/* start navbar  */
-header 
-{
-    background-color: black;
-}
-nav ul 
-{
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    gap: 1rem;
-}
-nav ul li 
-{
-    font-size: 2.4rem;
-}
-nav ul li a
-{
-    text-decoration: none;
-    color: white;
-}
-nav ul li img 
-{
-    width: 10rem;
-}
-nav ul li:hover
-{
-    font-weight: 600;
-}
-/* end navbar  */
-
-/*start main section  */
-.main
-{
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    text-transform: capitalize;
-    height: 60rem;
-    background-color:#252734;
-}
-.main-heading p:nth-child(1){
-    font-size: 8rem;
-}
-.main-heading p:nth-child(2){
-    font-size: 10rem;
-}
-.main-heading p:nth-child(3){
-    margin-top: 4rem;
-    font-size: 2rem;
-}
-.main-photo img
-{
-    height: auto;
-}
-/*end main section  */
-
-/* start about us  */
-.about-us
-{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    color: white;
-    background-color: #2A2C39;
-    gap: 1rem;
-    padding: 5rem;
-}
-.about-us p:nth-child(1)
-{
-    font-size: 7rem;
-}
-.about-us p:nth-child(2)
-{
-    font-size: 4rem;
-}
-.about-us ul li:nth-child(n+1)
-{
-    font-size: 2rem;
-    padding: 5rem;
-}
-.about-us ul li:nth-child(odd)
-{
-    background-color: #484c64;
-}
-/* end about us  */
-
-/*start skill section  */
-.skill
-{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    background-color:#2A2C39;
-    height: 60rem;
-    gap: 1rem;
-}
-#skill-heading
-{
-    width: 50rem;
-    color: white;
-    font-size: 7rem;
-}
-#main-skill
-{
-    display: flex;
-    flex-direction: column;
-    color: white;
-    gap: 2rem;
-    align-items: center;
-    background-color: #282A37;
-    padding: 3rem 4rem;
-}
-#main-skill div img 
-{
-    width: 10rem;
-}
-#main-skill p 
-{
-    font-size: 5rem;
-}
-#main-skill ul li
-{
-    padding: 0.5rem;
-    font-size:2.5rem ;
-}
-#main-skill ul li progress
-{
-    margin-left:2rem;
-}
-
-/*end skill section  */
-
-/* start projects section  */
-.project
-{
-    background-color:#2A2C39 ;
-    padding: 5rem;
-}
-.projects
-{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    text-align: center;
-}
-#project-heading
-{
-    padding: 5rem;
-    color: white;
-    font-size: 7rem;
-}
-.projects .project-list
-{
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
-    font-size: 3rem;
-    color: white;
-}
-.projects .project-list img{
-    width: 30rem;
-}
-/* end projects section  */
-
-/* start contact us  */
-.contact
-{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    color: white;
-    background-color: #2A2C39;
-    gap: 1rem;
-    padding: 5rem;
-    align-items: center;
-
-}
-.contact h3
-{
-    font-size: 7rem;
-}
-form
-{
-    border-radius: 3rem;
-    padding: 4rem 7rem;
-    text-align: center;
-    color: black;
     background-color: #fff;
-    width: 40rem;
+    color: #171717;
+    width: 40%;
+    padding: 2rem;
+    margin: 4rem auto;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+
+}
+.weather_header
+{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    font-size: 2.2rem;
-    gap: 2rem;
-    -webkit-border-radius: 3rem;
-    -moz-border-radius: 3rem;
-    -ms-border-radius: 3rem;
-    -o-border-radius: 3rem;
 }
 input
 {
-    padding: 1rem;
-    border-radius: 2rem;
-    -webkit-border-radius: 2rem;
-    -moz-border-radius: 2rem;
-    -ms-border-radius: 2rem;
-    -o-border-radius: 2rem;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    outline: none;
+    padding: 0.5rem 2.5rem;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
-/* end contact us  */
-
-footer
+input::placeholder
 {
- background-color:#2A2C39 ;   
- padding: 5rem;
+    color: #fff;
 }
-footer div 
+.weather_serach
+{
+    position: relative;
+}
+.weather_forecast 
+{
+    background-color: rgba(0, 0, 0, 0.297);
+    /* color: white; */
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+    border: none;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.weather_serach i
+{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    font-size: 15px;
+    color:#fff;
+}
+.weather_body
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    margin: 10px;
+}
+.weather_info
 {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    font-size: 2rem;
-    color: white;
+    flex-wrap: wrap;
+
 }
-footer div img 
+.weather_info .weather_card
 {
-    width: 10rem;
+    display: flex;
+    width: 50px;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    border: 1px solid black;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    padding: 10px;
+    margin-top: 5px;
+    gap: 20px;
+    
 }
